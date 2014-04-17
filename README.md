@@ -1,4 +1,4 @@
-yec-india
-=========
+Siddharth Kannan
+================
 
-Youth Energy Commission Website: http://icyflame.github.io/yec-india/
+My personal website: http://icyflame.github.io
