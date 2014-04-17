@@ -13,90 +13,114 @@
 
 	<style>
 
+	/* Font definition */
+
+	@font-face {
+		font-family: 'blair';
+		src: url('css/blair.woff') format('woff'), url('css/blair.ttf') format('truetype') ;
+		font-weight: bold;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'timeburner';
+		src: url('css/timeburner.woff') format('woff'), url('css/timeburner.ttf') format('truetype') ;
+		font-weight: bold;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'PTSans';
+		src: url('css/PTSans.woff') format('woff'), url('css/PTSans.ttf') format('truetype') ;
+		font-weight: bold;
+		font-style: normal;
+	}
+
 	html, body { 
 		height: 100%;
 		/*overflow: hidden;*/
 	}
-	#textDiv{
-		position:absolute;		
-		top:10%;
-		/*left:50%;*/		
+
+	.outer{
+		min-height: 95%;
+		background-color: #343D5C ;
+		width: 100%; 
+		text-align: center;
+		top:10%; 
+		position: absolute
 	}
 
-	.text{
+	.text, i{
 
 		color: #ffffff;
-		opacity: ;
+		opacity: 0.65;
 
+	}
+
+	ul li{
+		display: inline;
 	}
 
 	i{
-		margin-left: 2px;
-		margin-right: 2px;
-		color: #ffffff;
+		margin-left: 4px;
+		margin-right: 4px;
+		color:;
 	}
 
-	/*#wordDiv2{
-		position:absolute;		
-		top:150%;
-		left:50%;
-		}*/
+	i:hover{
+		opacity: 1;
+	}
 
-		</style>
+	</style>
 
-	</head>
+</head>
 
-	<body>
+<body style="background-color: #343D5C">
 
-		<div id="outer" style="min-height: 95%; background-color: #343D5C ; width: 100%; text-align: center; vertical-align: middle;">
-			<div id="textDiv" style="width: 100%">
-				<img src="me.jpg" width="200" height="200" style="border-radius: 100%;"/>
+	<div class="outer" style="">
 
-				<div class="text">
-					<h1>Siddharth Kannan</h1>
+		<div>
 
-					<a href="#">
-						<i class="fa fa-facebook fa-5x">
-						</i>
-					</a>
-					<a href="#">
-						<i class="fa fa-twitter fa-5x">
-						</i>
-					</a>
-					<a href="#">
-						<i class="fa fa-github fa-5x">
-						</i>
-					</a>
-					<a href="#">
-						<i class="fa fa-youtube fa-5x">
-						</i>
-					</a>
-					<a href="#">
-						<i class="fa fa-linkedin fa-5x">
-						</i>
-					</a>
-					<a href="#">
-						<i class="fa fa-google-plus fa-5x">
-						</i>
-					</a>
-					<a href="#">
-						<i class="fa fa-envelope fa-5x">
-						</i>
-					</a>
-				</div>
-			</div>			
-		</div>
+			<img src="me.jpg" width="200" height="200" style="border-radius: 100%;"/>
 
-		
+			<div class="text">
+				<h1 style="font-family: PTSans">icyflame</h1>
 
-		<div id="footer" class="" style="bottom: 20px; left: 10px;">
+				<h2 style="font-family: PTSans">Hi! I am Siddharth Kannan.</h2>
 
-			Kharagpur, West Bengal, India
+				<h2 style="font-family: PTSans"> Cuber | Programmer | Pianist </h2>
 
-		</div>
+				<a href="#">
+					<i class="fa fa-facebook fa-5x">
+					</i>
+				</a>
+				<a href="#">
+					<i class="fa fa-twitter fa-5x">
+					</i>
+				</a>
+				<a href="#">
+					<i class="fa fa-github fa-5x">
+					</i>
+				</a>
+				<a href="#">
+					<i class="fa fa-youtube fa-5x">
+					</i>
+				</a>
+				<a href="#">
+					<i class="fa fa-linkedin fa-5x">
+					</i>
+				</a>
+				<a href="#">
+					<i class="fa fa-google-plus fa-5x">
+					</i>
+				</a>
+				<a href="#">
+					<i class="fa fa-envelope fa-5x">
+					</i>
+				</a>
+			</div>
+		</div>			
+	</div>
+</body>
 
-		
-
-	</body>
-
-	</html>
+</html>
