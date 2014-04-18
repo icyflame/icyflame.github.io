@@ -36,17 +36,41 @@
 		font-style: normal;
 	}
 
+	/* Full screen */
+
 	html, body { 
 		height: 100%;
 		/*overflow: hidden;*/
 	}
 
+	/* toggle button */
+
+	.toggle-button{
+		margin-left: 10px;
+		margin-top: 10px;
+		z-index: 10;
+		position: fixed;
+	}
+
+	/* screen-fill classes */
+
+	.outer-header{
+		color: #ffffff;
+		height: 20px;
+		width: 100%;
+		text-align: center;
+		top:20px;
+		position: fixed;
+		z-index: 10;
+		display: none;
+	}
+
 	.outer{
 		min-height: 95%;
-		width: 100%; 
+		width: 100%;
 		text-align: center;
-		top:8%; 
-		position: absolute
+		top:8%;
+		position: absolute;
 	}
 
 	.outer-2{
@@ -58,6 +82,8 @@
 		position: absolute;
 	}
 
+	/* text and images */
+
 	.text, i{
 
 		color: #ffffff;
@@ -66,13 +92,13 @@
 
 	}
 
+	/* to display images circular */
+
 	.circular{
 		border-radius: 100%;
 	}
 
-	ul li{
-		display: inline;
-	}
+	/* glyphicons :- underline and opacity; */
 
 	i{
 		margin-left: 4px;
@@ -84,13 +110,41 @@
 		opacity: 1;
 	}
 
+	a{
+		text-decoration: none !important;
+	}
+
 	</style>
+
+	<script>
+
+	$(window).scroll(function(){
+
+		$("#outer-header").fadeOut();
+
+	});
+
+	function toggle(){
+		$("#outer-header").fadeToggle();
+	}
+
+	</script>
 
 </head>
 
 <body style="background-color: #343D5C">
 
-	<div id="header" class="outer" style="background-color: #2A3E59">
+	<button class="btn btn-lg btn-info toggle-button" onclick="toggle();">
+			Toggle
+	</button>
+
+	<div id="outer-header" class="outer-header">
+
+		Header # Bio # Work # blah # blah
+
+	</div>
+
+	<div id="first-screen" class="outer" style="background-color: #2A3E59">
 
 		<div>
 
@@ -157,10 +211,10 @@
 
 			<div class="col-md-2">
 			</div>
-
 			
 		</div>			
 	</div>
+
 </body>
 
 </html>
