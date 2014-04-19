@@ -11,6 +11,14 @@
 
 	<script src="js/jquery-2.1.0.min.js"></script>
 
+	<!-- z-index list
+
+		8 :- First screen
+		10 :- Left Sidebar
+		11 :- toggle button
+
+	-->
+
 	<style>
 
 	/* Font definition */
@@ -40,6 +48,9 @@
 
 	html, body { 
 		height: 100%;
+		margin-top: 10px;
+		/*margin-right: 10px;
+		margin-left: 10px;*/
 		/*overflow: hidden;*/
 	}
 
@@ -52,9 +63,9 @@
 		position: fixed;
 	}
 
-	/* screen-fill classes */
+	/* sidebar css */
 
-	.outer-header{
+	.sidebar{
 		background-color: #343D5C;
 		color: #ffffff;
 		height: 100%;
@@ -68,20 +79,26 @@
 		display: none;
 	}
 
+	/* screen-fill classes */
+
 	.outer{
-		min-height: 95%;
+		min-height: 100%;
 		width: 100%;
 		text-align: center;
 		top:8%;
-		position: absolute;
+		position: relative;
+		z-index: 8;
+		right: 0;
+		left: 0;
 	}
 
 	.outer-2{
 		min-height: 50%;
-		background-color: #ffffff ;
+		background-color: #ffffff;
 		width: 100%; 
+		top: 60px;
 		text-align: left;
-		top:108%; 
+		/*top:108%;*/ 
 		position: relative;
 	}
 
@@ -118,42 +135,48 @@
 		color: auto;
 	}
 
-	/* left side bar css */
+	/* bootstrap override */
+
+	.row{
+		margin-right: 0 !important;
+		margin-left: 0 !important;
+	}
+
+	.container-fluid{
+		margin-right: 0 !important;
+		margin-left: 0 !important;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
 
 	</style>
 
 	<script>
 
-	$(".outer-header a").click(function(){
-
-		alert("Link clicked!");
-
-	});
-
 	// $(window).scroll(function(){
 
-	// 	$("#outer-header").fadeOut();
+	// 	$("#sidebar").fadeOut();
 
 	// });
 
-	function toggle(){
-		$("#outer-header").slideToggle();
-		$("#toggle-button").toggleClass("fa-caret-square-o-up")
-	}	
+function toggle(){
+	$("#sidebar").slideToggle();
+	$("#toggle-button").toggleClass("fa-caret-square-o-up")
+}	
 
-	</script>
+</script>
 
 </head>
 
-<body style="background-color: #343D5C">
+<body style="background-color: 2A3E59">
 
 	<div id="top"></div>
 
 	<i id="toggle-button" class="fa fa-caret-square-o-down fa-3x toggle-button" onclick="toggle();">
-			
+
 	</i>
 
-	<div id="outer-header" class="fa fa-2x outer-header">
+	<div id="sidebar" class="fa fa-2x sidebar">
 
 		<br/><br/>
 
@@ -162,75 +185,79 @@
 
 	</div>
 
-	<div id="first-screen" class="row outer" style="background-color: #2A3E59">
+	<div class="container-fluid">
 
-		<div>
+		<div id="first-screen" class="row outer" style="background-color: #2A3E59">
 
-			<br/>
-
-			<img src="dp.jpg" class="circular" width="200" height="200"/>
-
-			<div class="text">
-
-				<h1>icyflame</h1>
-
-				<h2>Hi! I am Siddharth Kannan.</h2>
-
-				<h2> Cuber | Programmer | Pianist </h2>
-
-				<a href="https://www.facebook.com/kannan.siddharth">
-					<i class="fa fa-facebook fa-5x">
-					</i>
-				</a>
-				<a href="https://twitter.com/_icyflame">
-					<i class="fa fa-twitter fa-5x">
-					</i>
-				</a>
-				<a href="https://github.com/IcyFlame">
-					<i class="fa fa-github fa-5x">
-					</i>
-				</a>
-				<a href="http://www.youtube.com/user/007007Delta">
-					<i class="fa fa-youtube fa-5x">
-					</i>
-				</a>
-				<a href="http://www.linkedin.com/pub/siddharth-kannan/7b/694/50a">
-					<i class="fa fa-linkedin fa-5x">
-					</i>
-				</a>
-				<a href="https://plus.google.com/+SiddharthKannan/posts">
-					<i class="fa fa-google-plus fa-5x">
-					</i>
-				</a>
-				<a href="mailto:kannan.siddharth12@gmail.com" target="_blank">
-					<i class="fa fa-envelope fa-5x">
-					</i>
-				</a>
-			</div>
-		</div>			
-	</div>
-
-	<div id="bio" class="row outer-2" style="font-family: PTSans;">
-
-		<div class="container-fluid">
-
-			<div class="col-md-2">
-			</div>
-
-			<div class="col-md-8">
+			<div>
 
 				<br/>
 
-				<h1>
-					I am pursuing my Bachelors degree in Biotechnology and Biochemical Engineering at the Indian Institute of Technology, Kharagpur. And I expect to graduate in April, 2018 with a Masters Degree in this discipline.
-				</h1>
+				<img src="dp.jpg" class="circular" width="200" height="200"/>
 
-			</div>
+				<div class="text">
 
-			<div class="col-md-2">
-			</div>
-			
-		</div>			
+					<h1>icyflame</h1>
+
+					<h2>Hi! I am Siddharth Kannan.</h2>
+
+					<h2> Cuber | Programmer | Pianist </h2>
+
+					<a href="https://www.facebook.com/kannan.siddharth">
+						<i class="fa fa-facebook fa-5x">
+						</i>
+					</a>
+					<a href="https://twitter.com/_icyflame">
+						<i class="fa fa-twitter fa-5x">
+						</i>
+					</a>
+					<a href="https://github.com/IcyFlame">
+						<i class="fa fa-github fa-5x">
+						</i>
+					</a>
+					<a href="http://www.youtube.com/user/007007Delta">
+						<i class="fa fa-youtube fa-5x">
+						</i>
+					</a>
+					<a href="http://www.linkedin.com/pub/siddharth-kannan/7b/694/50a">
+						<i class="fa fa-linkedin fa-5x">
+						</i>
+					</a>
+					<a href="https://plus.google.com/+SiddharthKannan/posts">
+						<i class="fa fa-google-plus fa-5x">
+						</i>
+					</a>
+					<a href="mailto:kannan.siddharth12@gmail.com" target="_blank">
+						<i class="fa fa-envelope fa-5x">
+						</i>
+					</a>
+				</div>
+			</div>			
+		</div>
+
+		<div id="bio" class="row outer-2" style="font-family: PTSans; background-color: #ffffff">
+
+			<div class="container-fluid">
+
+				<div class="col-md-2">
+				</div>
+
+				<div class="col-md-8">
+
+					<br/>
+
+					<h1>
+						I am pursuing my Bachelors degree in Biotechnology and Biochemical Engineering at the Indian Institute of Technology, Kharagpur. And I expect to graduate in April, 2018 with a Masters Degree in this discipline.
+					</h1>
+
+				</div>
+
+				<div class="col-md-2">
+				</div>
+
+			</div>			
+		</div>
+
 	</div>
 
 </body>
