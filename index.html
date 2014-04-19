@@ -48,18 +48,21 @@
 	.toggle-button{
 		margin-left: 10px;
 		margin-top: 10px;
-		z-index: 10;
+		z-index: 11;
 		position: fixed;
 	}
 
 	/* screen-fill classes */
 
 	.outer-header{
+		background-color: #343D5C;
 		color: #ffffff;
-		height: 20px;
-		width: 100%;
+		height: 100%;
+		width: 15%;
 		text-align: center;
-		top:20px;
+		top:0;
+		left: 0;
+		margin-top: 60px;
 		position: fixed;
 		z-index: 10;
 		display: none;
@@ -79,7 +82,7 @@
 		width: 100%; 
 		text-align: left;
 		top:108%; 
-		position: absolute;
+		position: relative;
 	}
 
 	/* text and images */
@@ -112,21 +115,31 @@
 
 	a{
 		text-decoration: none !important;
+		color: auto;
 	}
+
+	/* left side bar css */
 
 	</style>
 
 	<script>
 
-	$(window).scroll(function(){
+	$(".outer-header a").click(function(){
 
-		$("#outer-header").fadeOut();
+		alert("Link clicked!");
 
 	});
 
+	// $(window).scroll(function(){
+
+	// 	$("#outer-header").fadeOut();
+
+	// });
+
 	function toggle(){
-		$("#outer-header").fadeToggle();
-	}
+		$("#outer-header").slideToggle();
+		$("#toggle-button").toggleClass("fa-caret-square-o-up")
+	}	
 
 	</script>
 
@@ -134,17 +147,22 @@
 
 <body style="background-color: #343D5C">
 
-	<button class="btn btn-lg btn-info toggle-button" onclick="toggle();">
-			Toggle
-	</button>
+	<div id="top"></div>
 
-	<div id="outer-header" class="outer-header">
+	<i id="toggle-button" class="fa fa-caret-square-o-down fa-3x toggle-button" onclick="toggle();">
+			
+	</i>
 
-		Header # Bio # Work # blah # blah
+	<div id="outer-header" class="fa fa-2x outer-header">
+
+		<br/><br/>
+
+		<a href="#top">Header</a> <br/> <br/>
+		<a href="#bio">Biography</a>
 
 	</div>
 
-	<div id="first-screen" class="outer" style="background-color: #2A3E59">
+	<div id="first-screen" class="row outer" style="background-color: #2A3E59">
 
 		<div>
 
@@ -192,7 +210,7 @@
 		</div>			
 	</div>
 
-	<div id="bio" class="outer-2" style="font-family: PTSans;">
+	<div id="bio" class="row outer-2" style="font-family: PTSans;">
 
 		<div class="container-fluid">
 
