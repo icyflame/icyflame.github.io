@@ -1,0 +1,3 @@
+Food :- I am a compulsive eater. Meals on time keep me on my feet. Food, Packed food, Packed junk food, food again!
+
+Code :- Passionate. Obsessive. Clean, indented code excites me.
