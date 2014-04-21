@@ -1,3 +1,9 @@
-Food :- I am a compulsive eater. Meals on time keep me on my feet. Food, Packed food, Packed junk food, food again!
+Food :- I am a compulsive eater. Meals on time keep me on my feet. Food, Packed food, Packed junk food,
+and then the cycle repeats itself :- icon-food (fa-3.2.1)
 
-Code :- Passionate. Obsessive. Clean, indented code excites me.
+Code :- Passionate. Obsessive. Clean, indented code excites me. :- Code icon (fa-code)
+
+Music :- Linkin Park, Christina Perri, Christina Aguilera, Backstreet Boys, Led Zeppelin, Lorde, Rihanna and so
+on, these are the artists I love. Boyceavenue and Alex Goot my favourite cover artists. :- fa-headphones
+
+TV :- Game of Thrones, Grey's Anatomy. I just love these two series! :- fa-desktop
