@@ -73,7 +73,7 @@
 		text-align: center;
 		top:0;
 		left: 0;
-		margin-top: 60px;
+		/*margin-top: 60px;*/
 		position: fixed;
 		z-index: 10;
 		display: none;
@@ -95,6 +95,16 @@
 	.outer-2{
 		min-height: 50%;
 		background-color: #ffffff;
+		width: 100%; 
+		top: 60px;
+		text-align: left;
+		/*top:108%;*/ 
+		position: relative;
+	}
+
+	.outer-3{
+		min-height: 100%;
+		background-color: #000000;
 		width: 100%; 
 		top: 60px;
 		text-align: left;
@@ -172,16 +182,16 @@ function toggle(){
 
 	<div id="top"></div>
 
-	<i id="toggle-button" class="fa fa-caret-square-o-down fa-3x toggle-button" onclick="toggle();">
+	<i id="toggle-button" class="fa fa-caret-square-o-down fa-3x toggle-button" style="color: grey" onclick="toggle();">
 
 	</i>
 
 	<div id="sidebar" class="fa fa-2x sidebar">
-
 		<br/><br/>
-
-		<a href="#top">Header</a> <br/> <br/>
-		<a href="#bio">Biography</a>
+		<br/><br/>
+		<a href="#top">Home</a> <br/> <br/>
+		<a href="#bio">Currently...</a> <br/> <br/>
+		<a href="#user">User</a> <br/> <br/>		
 
 	</div>
 
@@ -258,8 +268,68 @@ function toggle(){
 			</div>			
 		</div>
 
-	</div>
+		<div id="user" class="row outer-3" style="font-family: PTSans; background-color:">
 
-</body>
+			<div style="text-align: center; margin-top: 10px;">
 
-</html>
+				<i class="fa fa-user fa-5x" color="#ffffff"></i>
+
+			</div>
+
+			<br/>
+
+			<div class="container-fluid">
+
+				<div class="col-md-1"> 
+				</div>
+
+				<div class="col-md-10">
+
+					<div class="container-fluid" style="text-align: center;" >
+
+						<div class="col-md-4">
+
+							<i class="fa fa-code fa-4x" color="#ffffff"></i>
+
+							<h4 style="text-align: justify;">
+								Passionate. Obsessive. Code is beautiful when it is cleanly written, indented properly and a joy to read, for everyone!
+							</h4>
+
+						</div>
+
+						<div class="col-md-4">
+
+							<i class="fa fa-desktop fa-4x" color="#ffffff"></i>
+
+							<h4 style="text-align: justify;">
+								Game of Thrones, Suits and Sherlock are the TV Series that I follow continously! Game of Thrones has fascinated me more than any other novel, movie or fictional artwork that I have ever read, seen or experienced.
+							</h4>
+
+						</div>
+
+						<div class="col-md-4">
+
+							<i class="fa fa-music fa-4x" color="#ffffff"></i>
+
+							<h4 style="text-align: justify;">
+								Linkin Park, Taylor Swift, Christina Perri, Christina Aguilera, Backstreet Boys, Led Zeppelin, Lorde, Rihanna and so
+								on, these are the artists I love. Apart from English, I also listen to South Korean music created by Kim Hyun Joong. Boyceavenue and Alex Goot my favourite cover artists.
+							</h4>
+
+
+
+						</div>
+
+					</div>			
+				</div>
+
+				<div class="col-md-1"> 
+				</div>
+
+			</div>
+
+		</div>
+
+	</body>
+
+	</html>
