@@ -27,6 +27,28 @@
 	
 	<!-- End of google analytics code -->
 
+	<!-- Smooth scroll code -->
+
+	<script>
+	$(function() {
+		$('a[href*=#]:not([href=#])').click(function() {
+			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				if (target.length) {
+					$('html,body').animate({
+						scrollTop: target.offset().top
+					}, 1000);
+					return false;
+				}
+			}
+		});
+	});
+	</script>
+
+	<!-- End of smooth scroll code -->
+
 	<!-- z-index list
 
 		8 :- First screen
@@ -368,23 +390,23 @@ function toggle(){
 								<i class="fa fa-music fa-4x" color="#ffffff"></i>
 
 								<h4 style="text-align: justify;">
--->									
-								</h4>
-
-							</div>
+								-->									
+							</h4>
 
 						</div>
 
-					</div>			
-				</div>
+					</div>
 
-				<div class="col-md-1"> 
-				</div>
+				</div>			
+			</div>
 
+			<div class="col-md-1"> 
 			</div>
 
 		</div>
 
-	</body>
+	</div>
 
-	</html>
+</body>
+
+</html>
