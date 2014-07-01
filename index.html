@@ -10,8 +10,9 @@
 	<link rel="stylesheet" href="buttons/css/buttons.css">
 	<script src="buttons/css/buttons.js"></script>
 
-	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> 
-	<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> 
+	<!-- <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">  -->
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
 	<!-- Requires internet-->
 
 	<script src="js/jquery-2.1.0.min.js"></script>
@@ -105,22 +106,6 @@
 		position: fixed;
 	}
 
-	/* sidebar css */
-
-	.sidebar{
-		background-color: #343D5C;
-		color: #ffffff;
-		height: 100%;
-		width: 15%;
-		text-align: center;
-		top:0;
-		left: 0;
-		/*margin-top: 60px;*/
-		position: fixed;
-		z-index: 10;
-		display: none;
-	}
-
 	/* screen-fill classes */
 
 	.outer{
@@ -184,6 +169,27 @@
 		position: relative;
 	}
 
+	/* sidebar css */
+
+	.sidebar{
+		background-color: #ffffff;
+		color: #000000;
+		height: 100%;
+		width: 15%;
+		text-align: center;
+		top:0;
+		left: 0;
+		/*margin-top: 60px;*/
+		position: fixed;
+		z-index: 10;
+		display: none;
+	}
+
+	.sidebar a{
+		color: black;
+
+	}
+
 	/* text and images */
 
 	.text, i{
@@ -241,6 +247,11 @@
 		padding-right: 0 !important;
 	}
 
+	.anodec:hover{
+		background-color: black !important;
+		color: white !important; 
+	}
+
 	</style>
 
 	<script>
@@ -248,13 +259,14 @@
 	function toggle(){
 		$("#sidebar").slideToggle();
 		$("#toggle-button").toggleClass("fa-caret-square-o-up")
+		// $("#toggle-button").toggle();
 	}	
 
 	</script>
 
 </head>
 
-<body style="background-color: 2A3E59">
+<body style="background-color: black">
 
 	<div id="top"></div>
 
@@ -269,13 +281,13 @@
 		<a href="#bio">Currently...</a> <br/> <br/>
 		<a href="#user">About me</a> <br/> <br/>
 		<a href="#education">Education</a> <br/> <br/>
-		<a href="siddharth-kannan-resume.pdf">Resum&eacute</a><br/></br>
+		<a href="siddharth-kannan-resume.pdf" target="_blank">Resum&eacute</a><br/></br>
 
 	</div>
 
 	<div class="container-fluid">
 
-		<div id="first-screen" class="row outer" style="background-color: #2A3E59">
+		<div id="first-screen" class="row outer" style="background-color: #000000;">
 
 			<div>
 
@@ -315,6 +327,10 @@
 						<i class="fa fa-google-plus fa-5x">
 						</i>
 					</a>
+					<a href="https://www.worldcubeassociation.org/results/p.php?i=2014KANN01" target="_blank">
+						<i class="fa fa-cube fa-5x">
+						</i>
+					</a>
 					<a href="mailto:kannan.siddharth12@gmail.com" target="_blank">
 						<i class="fa fa-envelope fa-5x">
 						</i>
@@ -323,7 +339,7 @@
 					<br/>
 					<br/>
 					<br/>
-					<a href="siddharth-kannan-resume.pdf" target="_blank" class="button button-pill button-flat-action">Resum&eacute</a>
+					<a href="siddharth-kannan-resume.pdf" target="_blank" class="anodec button button-circle button-flat" style="background-color: white; color: black;">Resum&eacute</a>
 
 				</div>
 			</div>			
@@ -362,7 +378,7 @@
 
 			<br/>
 
-			<div class="container-fluid">
+			<div class="container-fluid" style="color: white;">
 
 				<div class="col-md-1"> 
 				</div>
@@ -414,7 +430,8 @@
 								<i class="fa icon-food fa-4x" color="#ffffff"></i>
 
 								<h4 style="text-align: justify;">
-									I am a compulsive foodie. Eating food at the right times keeps me on my feet! Food, junk food, packed food :- In that order!
+									I am a compulsive eater. Eating food at the right times, in the right
+									quantity, keeps me on my feet! Food, junk food, packed food :- Often in that order!
 								</h4>
 
 							</div>
@@ -425,13 +442,22 @@
 
 								<h4 style="text-align: justify;">
 
-									Coffee-lover! A strong cup of coffee at any point of time on any day increases my spirits!
+									Coffee-lover! A strong cup of coffee at any point of time, on any day increases my spirits!
 									
 								</h4>
 
 							</div>
 
 							<div class="col-md-4">
+
+								<i class="fa fa-heart fa-4x" color="#ffffff"></i>
+
+								<h4 style="text-align: justify;">
+
+									I am a total Game of Thrones fan. I love sci-fi movies. I maintain a <a href="https://gist.github.com/icyflame/11229829" target="_blank">list</a> of all the supercomputers that are proposed in the movies I love. I can solve the Rubik's Cube in under 50 seconds. I have <a href="https://www.worldcubeassociation.org/results/p.php?i=2014KANN01" target="_blank">participated</a> in one cubing competition so far.
+									
+								</h4>
+
 							</div>
 
 						</div>
@@ -465,24 +491,36 @@
 
 					<img src="images/iit-logo.jpg" class="edu-icon"/>
 
-					<span>
-						<br/><br/>Indian Institute of Technology, Kharagpur<br/>
-						West Bengal, India<br/>
-						(July, 2013 - April, 2018 Expected)<br/>
-						I would be graduating in 2018 with a Dual Degree in Biotechnology and Biochemical Engineering.
+					<span class="fa">
+						<br/><br/>
+						<span class="fa fa-2x">Indian Institute of Technology</span><br/>
+						<span class="fa fa-2x">Kharagpur</span><br/><br/>
+						West Bengal, India<br/><br/>
+						(July, 2013 - April, 2018 Expected)<br/><br/>
+						I would be graduating in 2018<br/>
+						with a Dual Degree in<br/>
+						Biotechnology and Biochemical Engineering.
 					</span>
 
 				</div>
 
 				<div class="col-md-6">
 
-					<img src="images/dav-logo.jpg" class="edu-icon"/>
+					<img src="images/dav-logo.jpg" class="edu-icon"/> <br/>
 
-					<br/><br/>DAV Public School, Nerul, Navi Mumbai,
-					<br/>Maharashtra, India
-					<br/>(June, 2005 - March, 2012)
-					<br/>I studied from class 5 through class 12 here. In classes 11 and 12, I was in the Computer Science Stream.
+					<span class="fa">
 
+						<br/><br/>
+						<span class="fa fa-2x">DAV Public School</span><br/>
+						<span class="fa fa-2x">Nerul, Navi Mumbai</span><br/><br/>
+						Maharashtra, India<br/><br/>
+						(June, 2005 - March, 2013)<br/><br/>
+						I studied from class 5 to class 12<br/>
+						here. In classes 11 and 12, I was<br/>
+						in the Computer Science stream.
+
+					</span>
+					
 				</div>
 
 			</div>
