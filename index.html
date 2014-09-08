@@ -133,7 +133,6 @@
 		min-height: 100%;
 		background-color: #000000;
 		width: 100%; 
-		top: 60px;
 		text-align: left;
 		/*top:108%;*/ 
 		position: relative;
@@ -212,6 +211,15 @@
 		height: 200px;	
 	}
 
+	/* Social Icon Hover Color Changes */
+
+	/* Projects CSS */
+
+	.projecttitle{
+		text-align: center;
+		font-family: PTSans; 
+	}
+
 	/* glyphicons :- underline and opacity; */
 
 	i{
@@ -248,8 +256,8 @@
 	}
 
 	.anodec{
-		background-color: white;
 		color: black;
+		background-color: white;
 	}
 
 	.anodec:hover{
@@ -271,7 +279,7 @@
 
 </head>
 
-<body style="background-color: #5927d8">
+<body style="background: 5927d8;"> <!--style="background-color: #5927d8"> -->
 
 	<div id="top"></div>
 
@@ -284,6 +292,7 @@
 		<br/><br/>
 		<a href="#top">Home</a> <br/> <br/>
 		<a href="#bio">Currently...</a> <br/> <br/>
+		<a href="#projects">Projects</a> <br/> <br/>
 		<a href="#user">About me</a> <br/> <br/>
 		<a href="#education">Education</a> <br/> <br/>
 		<a href="siddharth-kannan-resume.pdf" target="_blank">Resum&eacute</a><br/></br>
@@ -292,7 +301,7 @@
 
 	<div class="container-fluid">
 
-		<div id="first-screen" class="row outer" style="background-color: #5927d8;">
+		<div id="first-screen" class="row outer" style="background-color: 5927d8;">
 
 			<div>
 
@@ -308,36 +317,36 @@
 
 					<h2> Cuber | Programmer | Pianist </h2>
 
-					<a href="https://www.facebook.com/kannan.siddharth" target="_blank">
-						<i class="fa fa-facebook fa-5x">
+					<a class="social-icon" href="https://www.facebook.com/kannan.siddharth" target="_blank">
+						<i class="fa fa-facebook fa-5x facebook">
 						</i>
 					</a>
-					<a href="https://twitter.com/_icyflame" target="_blank">
-						<i class="fa fa-twitter fa-5x">
+					<a class="social-icon" href="https://twitter.com/_icyflame" target="_blank">
+						<i class="fa fa-twitter fa-5x twitter">
 						</i>
 					</a>
-					<a href="https://github.com/IcyFlame" target="_blank">
-						<i class="fa fa-github fa-5x">
+					<a class="social-icon" href="https://github.com/IcyFlame" target="_blank">
+						<i class="fa fa-github fa-5x github">
 						</i>
 					</a>
-					<a href="http://www.youtube.com/user/007007Delta" target="_blank">
-						<i class="fa fa-youtube fa-5x">
+					<a class="social-icon" href="http://www.youtube.com/user/007007Delta" target="_blank">
+						<i class="fa fa-youtube fa-5x youtube">
 						</i>
 					</a>
-					<a href="http://www.linkedin.com/pub/siddharth-kannan/7b/694/50a" target="_blank">
-						<i class="fa fa-linkedin fa-5x">
+					<a class="social-icon" href="http://www.linkedin.com/pub/siddharth-kannan/7b/694/50a" target="_blank">
+						<i class="fa fa-linkedin fa-5x linkedin">
 						</i>
 					</a>
-					<a href="https://plus.google.com/+SiddharthKannan/posts" target="_blank">
-						<i class="fa fa-google-plus fa-5x">
+					<a class="social-icon" href="https://plus.google.com/+SiddharthKannan/posts" target="_blank">
+						<i class="fa fa-google-plus fa-5x googleplus">
 						</i>
 					</a>
-					<a href="https://www.worldcubeassociation.org/results/p.php?i=2014KANN01" target="_blank">
-						<i class="fa fa-cube fa-5x">
+					<a class="social-icon" href="https://www.worldcubeassociation.org/results/p.php?i=2014KANN01" target="_blank">
+						<i class="fa fa-cube fa-5x wca">
 						</i>
 					</a>
-					<a href="mailto:kannan.siddharth12@gmail.com" target="_blank">
-						<i class="fa fa-envelope fa-5x">
+					<a class="social-icon" href="mailto:kannan.siddharth12@gmail.com" target="_blank">
+						<i class="fa fa-envelope fa-5x gmail">
 						</i>
 					</a>
 
@@ -347,192 +356,121 @@
 
 					<a href="siddharth-kannan-resume.pdf" target="_blank" class="anodec button button-rounded button-flat-primary button-jumbo">Resum&eacute</a>
 
-<!-- 					<a href="siddharth-kannan-resume.pdf" target="_blank" >
+					<!--<a href="siddharth-kannan-resume.pdf" target="_blank" >
 
 						<button class="anodec button button-rounded button-flat-primary button-jumbo" style="">Resum&eacute</button>
 
 					</a>
- -->
-				</div>
-			</div>			
-		</div>
+				-->
+			</div>
+		</div>			
+	</div>
 
-		<div id="bio" class="row outer-2" style="font-family: PTSans; background-color: #ffffff">
+	<div id="bio" class="row outer-2" style="font-family: PTSans; background-color: #ffffff">
 
-			<div class="container-fluid">
+		<div class="container-fluid" style="margin-top: 30px; margin-bottom: 50px">
 
-				<div class="col-md-2">
-				</div>
-
-				<div class="col-md-8">
-
-					<br/>
-
-					<h1>
-						I am pursuing a Dual degree (BTech and MTech) in Mechanical Engineering at the Indian Institute of Technology, Kharagpur. I expect to graduate in April, 2018 with a Masters Degree in this discipline.
-					</h1>
-
-				</div>
-
-				<div class="col-md-2">
-				</div>
-
-			</div>			
-		</div>
-
-		<div id="user" class="row outer-3" style="font-family: PTSans; background-color:#6830cf">
-
-			<div style="text-align: center; margin-top: 10px;">
-
-				<i class="fa fa-user fa-5x" color="#ffffff"></i>
-
+			<div class="col-md-2">
 			</div>
 
-			<br/>
+			<div class="col-md-8">
 
-			<div class="container-fluid" style="color: white;">
+				<br/>
 
-				<div class="col-md-1"> 
-				</div>
-
-				<div class="col-md-10">
-
-					<div class="container-fluid" style="text-align: center;" >
-
-						<div class="row">
-
-							<div class="col-md-4">
-
-								<i class="fa fa-code fa-4x" color="#ffffff"></i>
-
-								<h4 style="text-align: justify;">
-									Passionate. Obsessive. Code is beautiful when it is cleanly written, indented properly and a joy to read, for everyone!
-								</h4>
-
-							</div>
-
-							<div class="col-md-4">
-
-								<i class="fa fa-desktop fa-4x" color="#ffffff"></i>
-
-								<h4 style="text-align: justify;">
-									Game of Thrones, Suits and Sherlock are the TV Series that I follow continously! Game of Thrones has fascinated me more than any other novel, movie or fictional artwork that I have ever read, seen or experienced.
-								</h4>
-
-							</div>
-
-							<div class="col-md-4">
-
-								<i class="fa fa-music fa-4x" color="#ffffff"></i>
-
-								<h4 style="text-align: justify;">
-									Linkin Park, Taylor Swift, Christina Perri, Christina Aguilera, Backstreet Boys, Led Zeppelin, Lorde, Rihanna and so
-									on, these are the artists I love. Apart from English, I also listen to South Korean music created by Kim Hyun Joong. Boyceavenue and Alex Goot my favourite cover artists.
-								</h4>
-
-							</div>
-
-						</div>
-						<br/>
-
-						<div class="row">
-
-							<div class="col-md-4">
-
-								<i class="fa icon-food fa-4x" color="#ffffff"></i>
-
-								<h4 style="text-align: justify;">
-									I am a compulsive eater. Eating food at the right times, in the right
-									quantity, keeps me on my feet! Food, junk food, packed food :- Often in that order!
-								</h4>
-
-							</div>
-
-							<div class="col-md-4">
-
-								<i class="fa fa-beer fa-4x" color="#ffffff"></i>
-
-								<h4 style="text-align: justify;">
-
-									Coffee-lover! A strong cup of coffee at any point of time, on any day increases my spirits!
-									
-								</h4>
-
-							</div>
-
-							<div class="col-md-4">
-
-								<i class="fa fa-heart fa-4x" color="#ffffff"></i>
-
-								<h4 style="text-align: justify;">
-
-									I am a total Game of Thrones fan. I love sci-fi movies. I maintain a <a href="https://gist.github.com/icyflame/11229829" target="_blank">list</a> of all the supercomputers that are proposed in the movies I love. I can solve the Rubik's Cube in under 50 seconds. I have <a href="https://www.worldcubeassociation.org/results/p.php?i=2014KANN01" target="_blank">participated</a> in one cubing competition so far.
-									
-								</h4>
-
-							</div>
-
-						</div>
-
-					</div>	
-				</div>		
-
-				<div class="col-md-1"> 
-				</div>
-
-			</div>
-
-		</div>
-
-		<div id="education" class="row outer-4" style="font-family: PTSans; background-color: #ffffff">
-
-			<div style="background: #ffffff; text-align: center;">
-				<h1>Education
+				<h1>
+					I am pursuing a Dual degree (BTech and MTech) in Mechanical Engineering at the Indian Institute of Technology, Kharagpur. I expect to graduate in April, 2018 with a Masters Degree in this discipline.
 				</h1>
+
 			</div>
 
+			<div class="col-md-2">
+			</div>
+
+		</div>			
+	</div>
+
+	<div id="projects" class="row outer-4" style="font-family: PTSans; background-color: #6830cf">
+
+		<div style="background: ; text-align: center; margin-top: 50px; margin-bottom: 50px; color: white; ">
+			<h1>Projects
+			</h1>
 		</div>
 
-		<div id="education-full" class="row outer-5" style="background-color: #754ab5">
+	</div>
 
-			<br/><br/>
+	<div id="projectsfull" class="row outer-3" style="font-family: PTSans; background-color: white; ">
+		<br/>
 
-			<div class="container-fluid" style="background:#; text-align: center; color: #ffffff">
+		<div class="container-fluid" style="color: black;">
+			
+			<div class="col-md-4">
 
-				<div class="col-md-6">
+				<div class="projecttitle">
 
-					<img src="images/iit-logo.jpg" class="edu-icon"/> <br/>
+					<h1>Networking Portal</h1>
 
-					<span class="fa">
-						<br/><br/>
-						<span class="fa fa-2x">Indian Institute of Technology</span><br/>
-						<span class="fa fa-2x">Kharagpur</span><br/><br/>
-						West Bengal, India<br/><br/>
-						(July, 2013 - April, 2018 Expected)<br/><br/>
-						I would be graduating in 2018<br/>
-						with a Dual Degree in<br/>
-						Mechanical Engineering.
-					</span>
+					<h4>Students' Alumni Cell, IIT Kharagpur</h4>
+
+					<h4>Fall 2014</h4>
+
+					<h3>
+						<span class="label label-success">WebApp</span>
+						<span class="label label-primary">PHP</span>
+						<a href="https://ellislab.com/codeigniter">
+							<span class="label label-success">CodeIgniter</span>
+						</a>
+					</h3>
 
 				</div>
 
-				<div class="col-md-6">
+				<h4 style="margin-top: 20px;">
+					Custom Software designed for Alumni Cell. This software will be used during the networking period, before every Alumni Meet, when multiple calling statistics need to be managed. These statistics are uploaded by multiple student members, throughout the first few weeks, of every Fall Semester. The applicaton is still undergoing changes, and has not yet been deployed.
+				</h4>
 
-					<img src="images/dav-logo.jpg" class="edu-icon"/> <br/>
+			</div>
 
-					<span class="fa">
+			<div class="col-md-4">
 
+				<div class="projecttitle">
+
+					<h1>Create Together</h1>
+
+					<h4>Students' Alumni Cell, IIT Kharagpur</h4>
+
+					<h4>Fall 2014</h4>
+
+					<h3>
+						<span class="label label-success">WebApp</span>
+						<span class="label label-primary">PHP</span>
 						<br/><br/>
-						<span class="fa fa-2x">DAV Public School</span><br/>
-						<span class="fa fa-2x">Nerul, Navi Mumbai</span><br/><br/>
-						Maharashtra, India<br/><br/>
-						(June, 2005 - March, 2013)<br/><br/>
-						I studied from class 5 to class 12<br/>
-						here. In classes 11 and 12, I was<br/>
-						in the Computer Science stream.
+						<a href="https://ellislab.com/codeigniter">
+							<span class="label label-success">
+								CodeIgniter
+							</span>
+						</a>
+						&nbsp
+						<span class="label label-success">Blogging</span>
+					</h3>
 
-					</span>
-					
+				</div>
+
+
+				<h4 style="margin-top: 20px;">
+					<b>Multiple user blogging framework.</b> Users are at different levels, with content creators, contributing to the content and the moderators, reviewing the content. Once the moderators approve the content, the post goes online.
+				</h4>
+
+			</div>
+
+			<div class="col-md-4">
+
+				<div class="projecttitle">
+
+					<h1>Indian Traffic Signs</h1>
+
+					<h4>IIITDM, Kancheepuram</h4>
+
+					<h4>Summer 2014</h4>
+
 				</div>
 
 			</div>
@@ -540,6 +478,176 @@
 		</div>
 
 	</div>
+
+	<div id="user" class="row outer-3" style="font-family: PTSans; background-color:#6830cf">
+
+		<div style="text-align: center; margin-top: 10px; font-size: 50px; color: white;">
+
+			<i class="fa fa-user" color="#ffffff"></i> About Me
+
+		</div>
+
+		<br/>
+
+		<div class="container-fluid" style="color: white;">
+
+			<div class="col-md-1"> 
+			</div>
+
+			<div class="col-md-10">
+
+				<div class="container-fluid" style="text-align: center;" >
+
+					<div class="row">
+
+						<div class="col-md-4">
+
+							<i class="fa fa-code fa-4x" color="#ffffff"></i>
+
+							<h4 style="text-align: justify;">
+								Passionate. Obsessive. Code is beautiful when it is cleanly written, indented properly and a joy to read, for everyone!
+							</h4>
+
+						</div>
+
+						<div class="col-md-4">
+
+							<i class="fa fa-desktop fa-4x" color="#ffffff"></i>
+
+							<h4 style="text-align: justify;">
+								Game of Thrones, Suits and Sherlock are the TV Series that I follow continously! Game of Thrones has fascinated me more than any other novel, movie or fictional artwork that I have ever read, seen or experienced.
+							</h4>
+
+						</div>
+
+						<div class="col-md-4">
+
+							<i class="fa fa-music fa-4x" color="#ffffff"></i>
+
+							<h4 style="text-align: justify;">
+								Linkin Park, Taylor Swift, Christina Perri, Christina Aguilera, Backstreet Boys, Led Zeppelin, Lorde, Rihanna and so
+								on, these are the artists I love. Apart from English, I also listen to South Korean music created by Kim Hyun Joong. Boyceavenue and Alex Goot my favourite cover artists.
+							</h4>
+
+						</div>
+
+					</div>
+					<br/>
+
+					<div class="row">
+
+						<div class="col-md-4">
+
+							<i class="fa icon-food fa-4x" color="#ffffff"></i>
+
+							<h4 style="text-align: justify;">
+								I am a compulsive eater. Eating food at the right times, in the right
+								quantity, keeps me on my feet! Food, junk food, packed food :- Often in that order!
+							</h4>
+
+						</div>
+
+						<div class="col-md-4">
+
+							<i class="fa fa-beer fa-4x" color="#ffffff"></i>
+
+							<h4 style="text-align: justify;">
+
+								Coffee-lover! A strong cup of coffee at any point of time, on any day increases my spirits!
+
+							</h4>
+
+						</div>
+
+						<div class="col-md-4">
+
+							<i class="fa fa-heart fa-4x" color="#ffffff"></i>
+
+							<h4 style="text-align: justify;">
+
+								I am a total Game of Thrones fan. I love sci-fi movies. I maintain a <a href="https://gist.github.com/icyflame/11229829" target="_blank">list</a> of all the supercomputers that are proposed in the movies I love. I can solve the Rubik's Cube in under 50 seconds. I have <a href="https://www.worldcubeassociation.org/results/p.php?i=2014KANN01" target="_blank">participated</a> in one cubing competition so far.
+
+							</h4>
+
+						</div>
+
+					</div>
+
+				</div>	
+			</div>		
+
+			<div class="col-md-1"> 
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="education" class="row outer-4" style="font-family: PTSans; background-color: #ffffff">
+
+		<div style="background: #ffffff; text-align: center; margin-top: 50px; margin-bottom: 50px;">
+			<h1>Education
+			</h1>
+		</div>
+
+	</div>
+
+	<div id="education-full" class="row outer-5" style="background-color: #754ab5">
+
+		<br/><br/>
+
+		<div class="container-fluid" style="background:#; text-align: center; color: #ffffff">
+
+			<div class="col-md-6">
+
+				<img src="images/iit-logo.jpg" class="edu-icon"/> <br/>
+
+				<span class="fa">
+					<br/><br/>
+					<span class="fa fa-2x">Indian Institute of Technology</span><br/>
+					<span class="fa fa-2x">Kharagpur</span><br/><br/>
+					West Bengal, India<br/><br/>
+					(July, 2013 - April, 2018 Expected)<br/><br/>
+					I would be graduating in 2018<br/>
+					with a Dual Degree in<br/>
+					Mechanical Engineering.
+				</span>
+
+			</div>
+
+			<div class="col-md-6">
+
+				<img src="images/dav-logo.jpg" class="edu-icon"/> <br/>
+
+				<span class="fa">
+
+					<br/><br/>
+					<span class="fa fa-2x">DAV Public School</span><br/>
+					<span class="fa fa-2x">Nerul, Navi Mumbai</span><br/><br/>
+					Maharashtra, India<br/><br/>
+					(June, 2005 - March, 2013)<br/><br/>
+					I studied from class 5 to class 12<br/>
+					here. In classes 11 and 12, I was<br/>
+					in the Computer Science stream.
+
+				</span>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="copyright" class="row outer-4" style="font-family: PTSans; background-color: #ffffff">
+
+		<div style="background: #ffffff; text-align: center; margin-top: 100px; margin-bottom: 100px;">
+			<h1>&copy Siddharth Kannan 2014
+			</h1>
+		</div>
+
+	</div>
+
+</div>
 
 </body>
 
