@@ -5,56 +5,14 @@
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<title> Siddharth Kannan </title>
 
-	<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
-
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 
 	<link rel="stylesheet" href="buttons/css/buttons.css">
-	<script src="buttons/js/buttons.js"></script>
 
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> 
 	<!-- <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">  -->
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
 	<!-- Requires internet-->
-
-	<script src="js/jquery-2.1.0.min.js"></script>
-	
-	<!-- Google Analytics Code -->
-	
-	<script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	
-	ga('create', 'UA-40518182-6', 'icyflame.github.io');
-	ga('send', 'pageview');
-	
-	</script>
-	
-	<!-- End of google analytics code -->
-
-	<!-- Smooth scroll code -->
-
-	<script>
-	$(function() {
-		$('a[href*=#]:not([href=#])').click(function() {
-			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-
-				var target = $(this.hash);
-				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-				if (target.length) {
-					$('html,body').animate({
-						scrollTop: target.offset().top
-					}, 1000);
-					return false;
-				}
-			}
-		});
-	});
-	</script>
-
-	<!-- End of smooth scroll code -->
 
 	<!-- z-index list
 
@@ -216,11 +174,23 @@
 	/* Social Icon Hover Color Changes */
 
 	.social-icon i{
-		opacity: 0.8;
+		opacity: 0.8;		
+		-webkit-transition: all 0.5s ease-out;
+		-moz-transition: all 0.5s ease-out;
+		-o-transition: all 0.5s ease-out;
+		transition: all 0.5s ease-out;
 	}
 
-/*
+	.social-icon i:hover{
+		opacity: 1.0;
+		-webkit-transition: all 0.5s ease-out;
+		-moz-transition: all 0.5s ease-out;
+		-o-transition: all 0.5s ease-out;
+		transition: all 0.5s ease-out;
+	}
 
+
+/*
 	.social-icon .github:hover{
 		color: #4183c4;
 	}
@@ -256,8 +226,6 @@
 	.github-black:hover{
 		color: 4183c4;
 	}
-
-	*/
 
 	/* Projects CSS */
 
@@ -360,7 +328,7 @@
 
 				<img src="dp.jpg" class="circular" width="200" height="200"/>
 
-				<div class="text">
+				<div id="social-links" class="text">
 
 					<h1>icyflame</h1>
 
@@ -368,35 +336,35 @@
 
 					<h2> Cuber | Programmer | Pianist </h2>
 
-					<a class="social-icon" href="https://www.facebook.com/kannan.siddharth" target="_blank">
+					<a class="social-icon" href="https://www.facebook.com/kannan.siddharth" target="_blank" data-toggle="tooltip" title="Facebook">
 						<i class="fa fa-facebook fa-5x facebook">
 						</i>
 					</a>
-					<a class="social-icon" href="https://twitter.com/_icyflame" target="_blank">
+					<a class="social-icon" href="https://twitter.com/_icyflame" target="_blank" data-toggle="tooltip" title="Twitter">
 						<i class="fa fa-twitter fa-5x twitter">
 						</i>
 					</a>
-					<a class="social-icon" href="https://github.com/IcyFlame" target="_blank">
+					<a class="social-icon" href="https://github.com/IcyFlame" target="_blank" data-toggle="tooltip" title="Github">
 						<i class="fa fa-github fa-5x github">
 						</i>
 					</a>
-					<a class="social-icon" href="http://www.youtube.com/user/007007Delta" target="_blank">
+					<a class="social-icon" href="http://www.youtube.com/user/007007Delta" target="_blank" data-toggle="tooltip" title="Youtube">
 						<i class="fa fa-youtube fa-5x youtube">
 						</i>
 					</a>
-					<a class="social-icon" href="http://www.linkedin.com/pub/siddharth-kannan/7b/694/50a" target="_blank">
+					<a class="social-icon" href="http://www.linkedin.com/pub/siddharth-kannan/7b/694/50a" target="_blank" data-toggle="tooltip" title="LinkedIn">
 						<i class="fa fa-linkedin fa-5x linkedin">
 						</i>
 					</a>
-					<a class="social-icon" href="https://plus.google.com/+SiddharthKannan/posts" target="_blank">
+					<a class="social-icon" href="https://plus.google.com/+SiddharthKannan/posts" target="_blank" data-toggle="tooltip" title="Google+">
 						<i class="fa fa-google-plus fa-5x googleplus">
 						</i>
 					</a>
-					<a class="social-icon" href="https://www.worldcubeassociation.org/results/p.php?i=2014KANN01" target="_blank">
+					<a class="social-icon" href="https://www.worldcubeassociation.org/results/p.php?i=2014KANN01" target="_blank" data-toggle="tooltip" title="World Cubing Association">
 						<i class="fa fa-cube fa-5x wca">
 						</i>
 					</a>
-					<a class="social-icon" href="mailto:kannan.siddharth12@gmail.com" target="_blank">
+					<a class="social-icon" href="mailto:kannan.siddharth12@gmail.com" target="_blank" data-toggle="tooltip" title="Gmail">
 						<i class="fa fa-envelope fa-5x gmail">
 						</i>
 					</a>
@@ -411,12 +379,12 @@
 						<a href="siddharth-kannan-resume.pdf" target="_blank" class="anodec button button-rounded button-flat-primary button-jumbo">Resum&eacute</a>
 					-->
 
-						<a href="http://icyflame.github.io/blog" target="_blank" class="anodecblog button button-rounded button-flat-primary button-jumbo">
-							<i style="color: black; " class="fa fa-pencil"></i> Blog
-						</a>
+					<a href="http://icyflame.github.io/blog" target="_blank" class="anodecblog button button-rounded button-flat-primary button-jumbo">
+						<i style="color: black; " class="fa fa-pencil"></i> Blog
+					</a>
 
 
-					</div>
+				</div>
 
 					<!--<a href="siddharth-kannan-resume.pdf" target="_blank" >
 
@@ -564,7 +532,7 @@
 				</div>
 
 				<h4 style="margin-top: 20px;">
-					As an Image Processing Intern at <a href="http://www.iiitdm.ac.in/">IIITDM, Kancheepuram</a>, I worked on "Detection and Classification of Indian Traffic signs". In a team of 2, we built a Matlab Module, which would take images (from a camera mounted on the vehicle) as input and classify them, and give meaningful information, gained from the traffic sign detected (if any) in the image, to the driver. A research paper was submitted to <a href="http://mile.ee.iisc.ernet.in/ICVGIP2014/">ICVGIP 2014</a>.
+					As an Image Processing Intern at <a href="http://www.iiitdm.ac.in/">IIITDM, Kancheepuram</a>, I worked on "Detection and Classification of Indian Traffic signs". In a team of 2, we built a Matlab Module, which would take images (from a camera mounted on the vehicle) as input and classify them, and give meaningful information, gained from the traffic sign detected (if any) in the image, to the driver.
 				</h4>
 
 				<div style="text-align: center; ">
@@ -755,6 +723,32 @@
 
 </div>
 
+<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="buttons/js/buttons.js"></script>
+
+<!-- Smooth scroll code -->
+
+<script>
+$(function() {
+	$('a[href*=#]:not([href=#])').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			if (target.length) {
+				$('html,body').animate({
+					scrollTop: target.offset().top
+				}, 1000);
+				return false;
+			}
+		}
+	});
+});
+</script>
+
+<!-- End of smooth scroll code -->
+
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -766,6 +760,16 @@ ga('send', 'pageview');
 
 </script>
 
+<script type='text/javascript'>
+
+$(document).ready(function() {
+	$("[data-toggle=tooltip]").tooltip({
+		animation: 'true',
+		placement: 'bottom'
+	});
+});
+
+</script>
 </body>
 
 </html>
