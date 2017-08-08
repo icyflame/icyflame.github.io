@@ -52,7 +52,7 @@
 	html, body {
 		height: 100%;
 		margin-top: 10px;
-		background-color: #5927d8; /* Universal background color */
+		background-color: white; /* Universal background color */
 		/*margin-right: 10px;
 		margin-left: 10px;*/
 		/*overflow: hidden;*/
@@ -86,8 +86,8 @@
 		width: 100%;
 		top: 60px;
 		text-align: left;
-		/*top:108%;*/
 		position: relative;
+                color: white;
 	}
 
 	.outer-3{
@@ -154,9 +154,9 @@
 
 	.text, .text > i{
 
-		color: #ffffff;
+		color: black;
 		/*opacity: 0.65;*/
-		font-family: PTSans;
+		font-family: Helvetica;
 
 	}
 
@@ -247,7 +247,14 @@
 		opacity: 1;
 	}
 
-	a{
+        /*
+        .call-to-action a {
+          text-decoration: underline;
+          text-decoration-color: black;
+        }
+
+
+	a {
 		text-decoration: none !important;
 		color: auto;
 	}
@@ -255,6 +262,7 @@
 	a:hover{
 		color: inherit !important;
 	}
+        */
 
 	/* bootstrap override */
 
@@ -312,16 +320,15 @@
 		<br/><br/>
 		<a href="#top">Home</a> <br/> <br/>
 		<a href="#bio">Currently...</a> <br/> <br/>
-		<a href="#projects">Projects</a> <br/> <br/>
 		<a href="#user">About me</a> <br/> <br/>
 		<a href="#education">Education</a> <br/> <br/>
-		<a href="siddharth-kannan-resume.pdf" target="_blank">Resum&eacute</a><br/></br>
 
 	</div>
 
 	<div class="container-fluid">
 
-		<div id="first-screen" class="row outer" style="background-color: 5927d8;">
+		<div id="first-screen" class="row outer"
+                  style="background-color: #ffffff; color: black;">
 
 			<div>
 
@@ -337,38 +344,17 @@
 
 					<h2> Cuber | Programmer | Pianist </h2>
 
-					<a class="social-icon" href="https://www.facebook.com/kannan.siddharth" target="_blank" data-toggle="tooltip" title="Facebook">
-						<i class="fa fa-facebook fa-5x facebook">
-						</i>
-					</a>
-					<a class="social-icon" href="https://twitter.com/_icyflame" target="_blank" data-toggle="tooltip" title="Twitter">
-						<i class="fa fa-twitter fa-5x twitter">
-						</i>
-					</a>
-					<a class="social-icon" href="https://github.com/IcyFlame" target="_blank" data-toggle="tooltip" title="Github">
-						<i class="fa fa-github fa-5x github">
-						</i>
-					</a>
-					<a class="social-icon" href="http://www.youtube.com/user/007007Delta" target="_blank" data-toggle="tooltip" title="Youtube">
-						<i class="fa fa-youtube fa-5x youtube">
-						</i>
-					</a>
-					<a class="social-icon" href="http://www.linkedin.com/pub/siddharth-kannan/7b/694/50a" target="_blank" data-toggle="tooltip" title="LinkedIn">
-						<i class="fa fa-linkedin fa-5x linkedin">
-						</i>
-					</a>
-					<a class="social-icon" href="https://plus.google.com/+SiddharthKannan/posts" target="_blank" data-toggle="tooltip" title="Google+">
-						<i class="fa fa-google-plus fa-5x googleplus">
-						</i>
-					</a>
-					<a class="social-icon" href="https://www.worldcubeassociation.org/results/p.php?i=2014KANN01" target="_blank" data-toggle="tooltip" title="World Cubing Association">
-						<i class="fa fa-cube fa-5x wca">
-						</i>
-					</a>
-					<a class="social-icon" href="mailto:kannan.siddharth12@gmail.com" target="_blank" data-toggle="tooltip" title="Gmail">
-						<i class="fa fa-envelope fa-5x gmail">
-						</i>
-					</a>
+                                        <h2 class="call-to-action">
+                                          <a href="siddharth-kannan-resume.pdf" target="_blank">CV</a> /
+                                          <a href="http://icyflame.github.io/projects" target="_blank">Projects</a> /
+                                          <a href="http://icyflame.github.io/blog" target="_blank">Blog</a>
+                                        </h2>
+
+                                        <h2 class="call-to-action">
+                                          <a href="https://twitter.com/_icyflame" target="_blank">Twitter</a> /
+                                          <a href="https://github.com/icyflame" target="_blank">GitHub</a> /
+                                          <a href="http://goodreads.com/_icyflame" target="_blank">Goodreads</a>
+                                        </h2>
 
 					<br/>
 					<br/>
@@ -376,28 +362,13 @@
 
 					<div>
 
-						<!--
-						<a href="siddharth-kannan-resume.pdf" target="_blank" class="anodec button button-rounded button-flat-primary button-jumbo">Resum&eacute</a>
-					-->
-
-					<a href="http://icyflame.github.io/blog" target="_blank" class="anodecblog button button-rounded button-flat-primary button-jumbo">
-						<i style="color: black; " class="fa fa-pencil"></i> Blog
-					</a>
-
-
 				</div>
-
-					<!--<a href="siddharth-kannan-resume.pdf" target="_blank" >
-
-						<button class="anodec button button-rounded button-flat-primary button-jumbo" style="">Resum&eacute</button>
-
-					</a>
-				-->
 			</div>
 		</div>
 	</div>
 
-	<div id="bio" class="row outer-2" style="font-family: PTSans; background-color: #ffffff">
+	<div id="bio" class="row outer-2" style="font-family: PTSans; 
+          background-color: #6830cf">
 
 		<div class="container-fluid" style="margin-top: 30px; margin-bottom: 50px">
 
@@ -418,309 +389,6 @@
 			</div>
 
 		</div>
-	</div>
-
-	<div id="projects" class="row outer-4" style="font-family: PTSans; background-color: #6830cf">
-
-		<div style="background: ; text-align: center; margin-top: 50px; margin-bottom: 50px; color: white; ">
-			<h1>Projects
-			</h1>
-		</div>
-
-	</div>
-
-	<div id="projectsfull" class="row outer-3" style="font-family: PTSans; background-color: white; ">
-		<br/>
-
-		<div class="container-fluid" style="color: black;">
-
-			<div class="row">
-
-				<div class="col-md-4">
-					<div class="projecttitle">
-
-						<h1>CLI Cube Timer</h1>
-
-						<h4>Open source</h4>
-
-						<h4>Summer 2015</h4>
-
-						<h3>
-							<span class="label label-primary">CLI</span>
-							<span class="label label-success">Node.js</span>
-						</h3>
-
-						<h5>An NPM Module for enthusiasts to record the time in which
-							they solve the Rubik's cube right from the terminal. A handy
-							integration of the Gist API ensures that you can backup your
-							solve time history, and not worry about losing it!</h5>
-
-						<div style="text-align: center; ">
-
-							<a class="social-icon" href="https://github.com/icyflame/node-cube-cli-timer#readme" target="_blank" style="font-size: 20px;">
-								<i class="fa fa-github github-black" style="font-size: 60px; color: black; "></i>
-							</a>
-
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="projecttitle">
-
-						<h1>Terminal Wallet</h1>
-
-						<h4>Open source</h4>
-
-						<h4>Summer 2015</h4>
-
-						<h3>
-							<span class="label label-primary">CLI</span>
-							<span class="label label-success">Node.js</span>
-						</h3>
-
-						<h5>An NPM module that will let you manage your wallet from
-							your terminal. Do everything that a double entry book-keeping
-							system lets you do, including credit, debit, stash and balance
-							status. Want to share your monthly summary with someone? Use the
-							export option!
-						</h5>
-
-						<div style="text-align: center; ">
-
-							<a class="social-icon" href="https://github.com/icyflame/terminal-wallet#readme" target="_blank" style="font-size: 20px;">
-								<i class="fa fa-github github-black" style="font-size: 60px; color: black; "></i>
-							</a>
-
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="projecttitle">
-
-						<h1>Cutouts</h1>
-
-						<h4>Open source</h4>
-
-						<h4>Summer 2015</h4>
-
-						<h3>
-							<span class="label label-primary">Ruby</span>
-							<span class="label label-success">Rails</span>
-							<span class="label label-primary">WebApp</span>
-						</h3>
-
-						<h5>
-							A simple no-bells-and-whistles link aggregation system. Add a
-							link, the author of the article, and a memorable quote from the
-							article. These will be stored on our Databases and can be exported
-							at any time either as JSON or as a locally viewable HTML file.<br>
-							Deployed on <a target="_blank" href="http://cutouts.herokuapp.com">heroku</a>
-						</h5>
-
-						<div style="text-align: center; ">
-
-							<a class="social-icon"
-								href="https://github.com/icyflame/cutouts#readme" target="_blank" style="font-size: 20px;">
-								<i class="fa fa-github github-black" style="font-size: 60px; color: black; "></i>
-							</a>
-
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="projecttitle">
-
-						<h1>Internal ERP</h1>
-
-						<h4>Students' Alumni Cell, IIT Kharagpur</h4>
-
-						<h4>Spring 2015</h4>
-
-						<h3>
-							<span class="label label-primary">Ruby on Rails</span>
-						</h3>
-
-						<div style="text-align: center; ">
-
-							<a class="social-icon" href="https://github.com/icyflame/erp-rails#readme" target="_blank" style="font-size: 20px;">
-								<i class="fa fa-github github-black" style="font-size: 60px; color: black; "></i>
-							</a>
-
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="projecttitle">
-
-						<h1>Yearbook Center API</h1>
-
-						<h4>Students' Alumni Cell, IIT Kharagpur</h4>
-
-						<h4>Spring 2015</h4>
-
-						<h3>
-							<span class="label label-primary">RestifyJS</span>
-							<span class="label label-success">Node.js</span>
-						</h3>
-
-						<div style="text-align: center; ">
-
-							<a class="social-icon" href="https://github.com/icyflame/yearbook-center-backend#readme" target="_blank" style="font-size: 20px;">
-								<i class="fa fa-github github-black" style="font-size: 60px; color: black; "></i>
-							</a>
-
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="projecttitle">
-
-						<h1>Mentorship Portal</h1>
-
-						<h4>Students' Alumni Cell, IIT Kharagpur</h4>
-
-						<h4>Spring 2015</h4>
-
-						<h3>
-							<span class="label label-primary">Ruby on Rails</span>
-						</h3>
-
-						<div style="text-align: center; ">
-
-							<a class="social-icon"
-								href="https://github.com/icyflame/mentorship-rails#readme" target="_blank" style="font-size: 20px;">
-								<i class="fa fa-github github-black" style="font-size: 60px; color: black; "></i>
-							</a>
-
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<hr>
-
-			<div class="row">
-
-			<div class="col-md-4">
-
-				<div class="projecttitle">
-
-					<h1>Networking Portal</h1>
-
-					<h4>Students' Alumni Cell, IIT Kharagpur</h4>
-
-					<h4>Fall 2014</h4>
-
-					<h3>
-						<span class="label label-success">WebApp</span>
-						<span class="label label-primary">PHP</span>
-						<a href="https://ellislab.com/codeigniter">
-							<span class="label label-success">CodeIgniter</span>
-						</a>
-					</h3>
-
-				</div>
-
-				<h4 style="margin-top: 20px;">
-					Custom Software designed for Alumni Cell. This software will be used during the networking period, before every Alumni Meet, when multiple calling statistics need to be managed. These statistics are uploaded by multiple student members, throughout the first few weeks, of every Fall Semester. The applicaton is still undergoing changes, and has not yet been deployed.
-				</h4>
-				<br/>
-
-				<div style="text-align: center; ">
-
-					<a class="social-icon" href="https://github.com/icyflame/alum-cell-erp" target="_blank" style="font-size: 20px;">
-						<i class="fa fa-github github-black" style="font-size: 60px; color: black; "></i>
-					</a>
-
-				</div>
-
-				<hr/>
-
-			</div>
-
-			<div class="col-md-4">
-
-				<div class="projecttitle">
-
-					<h1>Create Together</h1>
-
-					<h4>Students' Alumni Cell, IIT Kharagpur</h4>
-
-					<h4>Fall 2014</h4>
-
-					<h3>
-						<span class="label label-success">WebApp</span>
-						<span class="label label-primary">PHP</span>
-						<br/><br/>
-						<a href="https://ellislab.com/codeigniter">
-							<span class="label label-success">
-								CodeIgniter
-							</span>
-						</a>
-						&nbsp
-						<span class="label label-success">Blogging</span>
-					</h3>
-
-				</div>
-
-
-				<h4 style="margin-top: 20px;">
-					<b>Multiple user blogging framework.</b> Users are at different levels, with content creators, contributing to the content and the moderators, reviewing the content. Once the moderators approve the content, the post goes online.
-				</h4>
-
-				<br/>
-
-				<div style="text-align: center; ">
-
-					<a class="social-icon" href="https://github.com/icyflame/alum-cell-blog" target="_blank" style="font-size: 20px;">
-						<i class="fa fa-github github-black" style="font-size: 60px; color: black; "></i>
-					</a>
-
-				</div>
-
-				<hr/>
-
-			</div>
-
-			<div class="col-md-4">
-
-				<div class="projecttitle">
-
-					<h1>Indian Traffic Signs</h1>
-
-					<h4>IIITDM, Kancheepuram</h4>
-
-					<h4>Summer 2014</h4>
-
-					<h3>
-						<span class="label label-success">Internship</span>
-						<span class="label label-primary">Matlab</span>
-					</h3>
-
-				</div>
-
-				<h4 style="margin-top: 20px;">
-					As an Image Processing Intern at <a href="http://www.iiitdm.ac.in/">IIITDM, Kancheepuram</a>, I worked on "Detection and Classification of Indian Traffic signs". In a team of 2, we built a Matlab Module, which would take images (from a camera mounted on the vehicle) as input and classify them, and give meaningful information, gained from the traffic sign detected (if any) in the image, to the driver.
-				</h4>
-
-				<div style="text-align: center; ">
-
-					<a class="social-icon" href="https://github.com/icyflame/traffic-sign-recog" target="_blank" style="font-size: 20px;">
-						<i class="fa fa-github github-black" style="font-size: 60px; color: black; "></i>
-					</a>
-
-				</div>
-
-				<hr/>
-
-			</div>
-
-		</div>
-
-		</div>
-
 	</div>
 
 	<div id="user" class="row outer-3" style="font-family: PTSans; background-color:#6830cf">
@@ -791,7 +459,10 @@
 
 							<h4 style="text-align: justify;">
 								Eating food at the right times, in the right
-								quantity, keeps me on my feet! Food, junk food, packed food :- Often in that order!
+								quantity, keeps
+                                                                me on my feet!
+                                                                <br>
+                                                                Food, junk food, packed food :- Often in that order!
 							</h4>
 
 						</div>
@@ -841,6 +512,9 @@
 		</div>
 
 	</div>
+
+        <br>
+        <br>
 
 	<div id="education" class="row outer-4" style="font-family: PTSans; background-color: #ffffff">
 
@@ -893,16 +567,17 @@
 
 			</div>
 
-			<a href="siddharth-kannan-resume.pdf" target="_blank" class="anodec button button-rounded button-flat-primary button-jumbo">Resum&eacute</a>
-
 		</div>
+
+                <br>
+                <br>
 
 	</div>
 
 	<div id="copyright" class="row outer-4" style="font-family: PTSans; background-color: #ffffff">
 
 		<div style="background: #ffffff; text-align: center; margin-top: 100px; margin-bottom: 100px;">
-			<h1>&copy Siddharth Kannan 2014
+			<h1>&copy Siddharth Kannan 2014-2017
 			</h1>
 		</div>
 
