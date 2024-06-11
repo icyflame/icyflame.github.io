@@ -10,8 +10,6 @@
 	<link rel="stylesheet" href="buttons/css/buttons.css">
 
 	<link href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-	<!-- <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">  -->
-	<link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
 	<!-- Requires internet-->
 
 	<!-- z-index list
@@ -56,15 +54,6 @@
 		/*margin-right: 10px;
 		margin-left: 10px;*/
 		/*overflow: hidden;*/
-	}
-
-	/* toggle button */
-
-	.toggle-button{
-		margin-left: 10px;
-		margin-top: 10px;
-		z-index: 11;
-		position: fixed;
 	}
 
 	/* screen-fill classes */
@@ -295,36 +284,9 @@
 
 	</style>
 
-	<script>
-
-	function toggle(){
-		$("#sidebar").slideToggle();
-		$("#toggle-button").toggleClass("fa-caret-square-o-up")
-		// $("#toggle-button").toggle();
-	}
-
-	</script>
-
 </head>
 
 <body style="background: 5927d8;"> <!--style="background-color: #5927d8"> -->
-
-	<div id="top"></div>
-
-	<i id="toggle-button" class="fa fa-caret-square-o-down fa-3x toggle-button" style="color: #999" onclick="toggle();">
-
-	</i>
-
-	<div id="sidebar" class="fa fa-2x sidebar">
-		<br/><br/>
-		<br/><br/>
-		<a href="#top">Home</a> <br/> <br/>
-		<a href="#bio">Currently...</a> <br/> <br/>
-		<a href="#user">About me</a> <br/> <br/>
-		<a href="#education">Education</a> <br/> <br/>
-
-	</div>
-
 	<div class="container-fluid">
 
 		<div id="first-screen" class="row outer"
@@ -632,17 +594,6 @@ $(function() {
 
 ga('create', 'UA-40518182-6', 'auto');
 ga('send', 'pageview');
-
-</script>
-
-<script type='text/javascript'>
-
-$(document).ready(function() {
-	$("[data-toggle=tooltip]").tooltip({
-		animation: 'true',
-		placement: 'bottom'
-	});
-});
 
 </script>
 </body>
